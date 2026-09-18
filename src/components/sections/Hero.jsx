@@ -1,7 +1,7 @@
-import { Phone, Star } from "lucide-react";
+import { MessageCircle, Phone, Star } from "lucide-react";
 
 import heroThali from "@/assets/hero-thali.jpg";
-import { PHONE_HREF } from "@/data/siteData";
+import { PHONE_HREF, WHATSAPP_BOOKING_HREF } from "@/data/siteData";
 
 export default function Hero() {
   return (
@@ -43,6 +43,14 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-cream/60 px-7 py-3 text-sm font-medium text-cream transition-colors hover:bg-cream hover:text-primary"
             >
               <Phone className="h-4 w-4" /> Call Now
+            </a>
+            <a
+              href={WHATSAPP_BOOKING_HREF}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-3 text-sm font-medium text-white shadow-card transition-transform hover:-translate-y-0.5"
+            >
+              <MessageCircle className="h-4 w-4" /> Book on WhatsApp
             </a>
           </div>
           <div className="mt-10 flex items-center gap-2 text-sm text-cream/85">

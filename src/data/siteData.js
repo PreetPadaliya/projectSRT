@@ -16,6 +16,9 @@ import rotlaAndBhakhri from "@/assets/PopularOT/RotlaANDBhakhri.jpg";
 
 export const PHONE = "+91 89999 09595";
 export const PHONE_HREF = "tel:+918999909595";
+export const WHATSAPP_BOOKING_HREF = `https://wa.me/918999909595?text=${encodeURIComponent(
+  "Hi Shree Radhe Thal !",
+)}`;
 
 export const navLinks = [
   { label: "Home", href: "/" },
